@@ -11,6 +11,10 @@ body {
     box-sizing: content-box;
 }
 
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .navbar-brand {
     font-weight: bold;
     font-size: 3rem;
@@ -30,10 +34,6 @@ body {
     background-size: cover;
 }
 
-.enclose {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 .nav-link {
     color: #fafafa;
 }
@@ -49,6 +49,8 @@ body {
     text-align: center;
     color: #fafafa;
     padding: 2rem 8rem 5rem 8rem;
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 h1 {
@@ -98,22 +100,29 @@ h1 {
     color: white;
 }
 
-button {
+.booking button {
     padding: 0.3rem 3rem 0.3rem 3rem;
     color: #FAFAFA;
-    background-color: #DB8937;
+    background-color: #6FBABF;
     border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .second-top {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    color: black;
-    background-color: #F9F9F9;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    color: #FAFAFA;
+    background-color: rgba(0, 0, 0, 0.8);
     box-sizing: border-box;
     padding: 3rem 2rem;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+}
+
+.second-top div {
+    width: 25rem;
 }
 
 .second-top img {
@@ -121,22 +130,130 @@ button {
     height: 20rem;
 }
 
-.second-top-left {
-    flex-basis: 40%;
-    margin-right: 5px;
-    border: 2px solid red;
-}
-
 .second-top-right {
-    /* padding: 3rem; */
-    flex-basis: 40%;
-    border: 2px solid blue;
+    margin-top: 3rem;}
+
+.second-top-left {
+    box-sizing: border-box;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    font-weight: bolder;
 }
 
+.second-top-left h2 {
+    text-transform: capitalize;
+    font-weight: bolder;
+}
 
+.bottom {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
 
+.bottom-first {
+    margin-top: 5rem;
+}
 
+.bottom .bottom-first p {
+    text-transform: none;
+}
 
+.bottom-images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.bottom img {
+    width: 20rem;
+    height: 20rem;
+    border: 8px solid white;
+}
+
+.bottom-button {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.bottom-button button {
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 1.5rem;
+    border-radius: 50px;
+    color: #FAFAFA;
+    background-color: #6FBABF;
+    border: none;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+    color: #FAFAFA;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #FFD5A5;
+}
+
+.footer li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+@media (max-width: 575px) {
+    .nav-item {
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    .nav-link:hover {
+        color: rgba(0, 0, 0, 0.8) !important;
+        background-color: #FAFAFA;
+        border-radius: 50px;
+    }
+
+    .booking {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        background-color: white;
+        padding: 2rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .booking div {
+        margin-top: 1rem;
+    }
+
+    .children input, .adult input, .departure input, .arrival input {
+        width: 11.5rem;
+    }
+
+    .booking button {
+        padding: 1rem 3rem 1rem 3rem;
+        color: #FAFAFA;
+        background-color: #6FBABF;
+        border: none;
+        border-radius: 50px;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+}
 
 
 
